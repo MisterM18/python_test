@@ -7,7 +7,7 @@ class TestFindBusiestIntersections(unittest.TestCase):
         # ข้อมูลทดสอบ
         test_data = [
             "Road-Intersec1,20\n",
-            "Road-Intersec2,15\n",
+            "Road-Intersec2,40\n",
             "Road-Intersec3,35\n",
             "Road-Intersec4,10\n",
         ]
