@@ -1,0 +1,24 @@
+import unittest
+from find_busiest_intersections import find_busiest_intersections
+
+
+class TestFindBusiestIntersections(unittest.TestCase):
+    def test_busiest_intersections(self):
+        # Arrange
+        test_data = [
+            "Road-Intersec1,10\n",
+            "Road-Intersec2,15\n",
+            "Road-Intersec2,5\n",
+            "Road-Intersec3,8\n",
+        ]
+        expected_result = (["Intersec2"], 20)
+
+        # Act
+        result = find_busiest_intersections(test_data)
+
+        # Assert
+        self.assertEqual(result, expected_result)
+
+
+if __name__ == "__main__":
+    unittest.main()
